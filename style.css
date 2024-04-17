@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    width: 1100px;
+    background-color: cyan;
+    padding: 15px;
+    margin: 20px auto;
+    
+}
+nav>ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+nav>ul>li{
+    font-size: 25px;
+    border: 0.1px solid red;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+nav>ul>li:hover{
+    overflow: visible;
+}
+.rajasthan{
+    background-color: yellow;
+    list-style: none;
+    position: absolute;
+    top: 150%;
+    left: 0;
+    opacity: 0;
+    transition: 1s;
+}
+nav>ul>li:hover .rajasthan{
+    opacity: 1;
+    top: 100%;
+}
+.rajasthan>li{
+    font-size: 20px;
+    padding: 15px 15px;
+    border: 0.1px solid red;
+    position: relative;
+    overflow: hidden;
+}
+.rajasthan>li:hover{
+    overflow: visible;
+}
+.tour{
+    background-color: olivedrab;
+    list-style: none;
+    position: absolute;
+    top: 150%;
+    right: -90px;
+    opacity: 0;
+    transition: 1s;
+}
+nav>ul>li:hover .tour{
+  opacity: 1;
+  top: 100%;
+}
+.tour>li{
+    font-size: 20px;
+    padding: 15px 15px;
+    width: 250px;
+    border: 0.1px solid red;
+
+}
+.oneway{
+    background-color: greenyellow;
+    list-style: none;
+    width: 600px;
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: absolute;
+    top: 150%;
+    left: -50%; 
+    right: 50%;
+    opacity: 0;
+    transition: 1s;
+}
+nav>ul>li:hover .oneway{
+    opacity: 1;
+    top: 100%;
+}
+.oneway>li{
+    font-size: 20px;
+    width: 70px;
+    padding: 0px 15px 5px 15px;
+    border-bottom: 2px solid blue;
+}
+.jodhpur{
+    background-color: green;
+    list-style: none;
+    position: absolute;
+    top: 0px;
+    left: 150%;
+    width: 200px;
+    transition: 1s;
+    opacity: 0;
+}
+.rajasthan>li:hover .jodhpur{
+    opacity: 1;
+    left: 100%;
+}
+.jodhpur>li{
+    font-size: 20px;
+    padding: 15px;
+    border: 0.1px red solid;
+}
